@@ -1,0 +1,72 @@
+body{
+    background-color: rgb(247, 247, 65);
+    font-family: 'Times New Roman', Times, serif;
+    background-repeat: no-repeat;
+    color: black;
+    line-height: 1.5;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(250, 245, 245);
+    max-width: 350px;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px;
+}
+
+.SVG{
+    border-radius: 15px;
+}
+
+.learn{
+  background-color: yellow;
+  font-weight: bold ;
+  border-radius: 5px; 
+  padding: 3px;
+  width: 70px;
+  text-align: center;
+}
+
+.pub{
+    font-size: small;
+   
+}
+
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+    color:black;
+}
+
+.image-with-caption {
+    display: flex;
+    align-items: center; /* Vertically center the items */
+    gap: 20px; /* Space between image and caption */
+    max-width: 600px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container if desired */
+  }
+  
+  .image-with-caption img {
+    max-width: 50%; /* Adjust the image width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  .image-with-caption .caption {
+    flex: 1; /* Allow the caption to take up remaining space */
+  }
+  .caption{
+    font-weight: bold;
+  }
+
+
+  @media screen and (min-width: 576px){
+    .container{
+      justify-content: center;
+      flex-flow:  nowrap;
+    }
+  }
